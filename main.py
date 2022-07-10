@@ -7,20 +7,18 @@
 
 import discord 
 from discord.ext import commands
-import colorama
 
 Prefix = "!"                            # Bot Prefix
 
-colorama.init()
 bot = commands.Bot(command_prefix=Prefix, help_command=None)
 
 # Obavestava vas kad je Bot online #
 @bot.event
 async def on_ready():
-    print(f'\u001b[37mBot status: \u001b[32mOnline')
-    print(f'\u001b[37mIme: \u001b[32m{bot.user.name}')
-    print(f'\u001b[37mID: \u001b[32m{bot.user.id}')
-    print(f'\u001b[37mServers: \u001b[32m{len(bot.guilds)}')
+    print('Bot status: Online')
+    print(f'Ime: {bot.user.name}')
+    print(f'ID:  {bot.user.id}')
+    print(f'Servers: {len(bot.guilds)}')
     await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="$upreme#1337")) # Status Bota
 
 
