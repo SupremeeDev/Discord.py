@@ -9,6 +9,7 @@ import discord
 from discord.ext import commands
 
 Prefix = "!"                            # Bot Prefix
+TOKEN = ""                              # Bot Token
 
 bot = commands.Bot(command_prefix=Prefix, help_command=None)
 
@@ -28,4 +29,4 @@ async def on_ready():
 async def test(ctx):                    # Ime komande (test)
     await ctx.reply("Test")             # Bot salje poruku 
 
-bot.run("ODQ3NzkyOTE4ODAyNTk1ODYw.GHFe4Z.Ur16ycQK8edQpQbvpKqVoBT2ayyGM03fA6jNiw")  # Bot token
+bot.run(TOKEN)
