@@ -1,7 +1,6 @@
 # # # # # # # # # # # # # # #
 #                           #
 #   Creator: $upreme#1337   #
-#   https://dsc.gg/pungas   #
 #                           #
 # # # # # # # # # # # # # # #
 
